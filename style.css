@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #d8b188;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.card {
+    background-color: #C18653;
+    padding: 3vw;
+    border-radius: 10px;
+    text-align: center;
+}
+.card h1 {
+    margin-bottom: 15px;
+    font-size: 70px;
+}
+.card-btn button {
+    border-radius: 5px;
+    color: #383B38;
+    padding: 10px 35px;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+button#decrement {
+    background: #f6e58d;
+}
+button#decrement:hover {
+    background: #f79f1f;
+    color: #fff;
+}
+button#reset {
+    background: #f3a683;
+}
+button#reset:hover {
+    background: #ea2027;
+    color: #fff;
+}
+button#increment {
+    background: #c4e538;
+}
+button#increment:hover {
+    background: #009432;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .card h1 {
+        font-size: 60px;
+    }
+    button#decrement:hover {
+        background: #f6e58d;
+        color: #383B38;
+    }
+    button#reset:hover {
+        background: #f3a683;
+        color: #383B38;
+    }
+    button#increment:hover {
+        background: #c4e538;
+        color: #383B38;
+    }
+}
+
+@media (max-width: 768px) {
+    .card h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .card h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 345px) {
+    .card h1 {
+        font-size: 30px;
+    }
+    .card-btn button {
+        padding: 7px 25px;
+        margin: 0 2.5px;
+    }
+}
